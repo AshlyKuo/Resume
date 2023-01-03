@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+html{
+    box-sizing: border-box;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    background-color:rgba(225,225,225);
+}
+
+/* Full Page Scroll  */
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align:start ;
+}
+
+.container{
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+/* Start Page Style */
+
+.starter{
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.starter img{
+    width: 35%;
+    padding: 10px;
+}
+
+#starterText{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#welcome{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#start{
+    font-weight: 500;
+}
+
+#starterText button{
+    width: 100px;
+    height: 50px;
+    color: #000;;
+    background-color: rgba(225,225,225);
+    border-radius: 5px;
+}
+
+#starterText button:hover{
+    background-color: #ed8090;
+    transform: scale(1.1);
+    transition: 1.2s ;
+}
+
+/* Content Pages Styles */
+.container{
+    height: 90vh;
+    width: 95%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* Fisrt Page Styles */
+
+@keyframes appearFont {
+    from {
+        color:rgb(255, 255, 255);
+        display: none;
+    }
+    to {
+        color: rgb(0, 0, 0);
+        display: contents;
+    }
+  }
+
+@keyframes appearShadow{
+    from{
+        text-shadow: none;
+    }
+    to{
+        text-shadow: rgb(226, 211, 37) 0.1em 0.1em 0.2em;
+    }
+}
+ 
+/* @keyframes appearImg{
+    from{
+        image:none;
+    }
+    to{
+        image:
+    }
+} */
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    animation-name: appearFont;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+.one img{
+    width:90%;
+    padding-right: 0;
+}
+
+.one div{
+    width: 50%;
+    height: 60%;
+}
+
+.one div:nth-of-type(2){
+padding-right: 35px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.one .title{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.one .content{
+    font-size: 20px;
+}
+
+/* Second Page Styles */
+
+.two{
+    font-size: 30px;
+    background-color: white;
+}
+
+.two div{
+    padding: 20px 20px;
+    justify-content: center;
+    width: auto;
+    height: 80%;
+    margin: 1%;
+    border-radius: 5%;
+}
+
+#experience{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#position{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.two .time{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.two img{
+    width: 40%;
+}
+
+#secondDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#secondDiv div{
+   width: auto;
+   height: auto;
+}
+
+.two .pros{
+    width: fit-content;
+    padding: 10px;
+    color: #ed8090;
+    border-radius: 3px;
+    font-size: 30px;
+    
+}
+
+.two .content{
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 10px;
+    animation-name: appearFont;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+}
+
+/* Third Page Styles */
+
+.three{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.three div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(237,128,144,0.7);
+    width: 20%;
+    height: 40%;
+    border-radius: 5%;
+    border: solid rgba(225,225,225);
+}
+
+.three .title{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: aliceblue;
+}
+
+.three .time{
+    font-size: 15px ;
+    color: rgba(225,225,225);
+}
+
+.three .school{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.three .time:nth-of-type(1n){
+    margin-bottom: 15px;
+}
+
+/* 4th Page Styles */
+
+.four{
+    background-color: white;
+}
+
+.four .title{
+    font-weight:bold ;
+}
+
+/* Scroll Down Styles */
+
+.scrolldown{
+    font-weight: 400;
+    font-size: 15px;
+    position: fixed;
+    bottom: 5%;
+    right: 15%;
+    animation-name: appearFont;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+
+
+
